@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Asynchronous File Upload</title>
+    </head>
+
+    <body>
+        <div id="pnlMessage" style="color:#FF0000"></div>
+
+        <form id="frmUpload" name="frmUpload" action="tt_afu.php" method="POST" enctype="multipart/form-data" target="ifrm_upload">
+            <label for="flUpload">File</label>
+            <input type="file" name="flUpload" id="flUpload">
+            <input type="hidden" name="hidUploadSize" id="hidUploadSize" value="50000000">
+            <input type="submit" name="btSubmit" id="btSubmit" value="Upload!">
+        </form>
+
+        <iframe id="ifrm_upload" name="ifrm_upload" style="display:none">
+
+        </iframe>
+    </body>
+</html> 
